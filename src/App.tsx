@@ -1,14 +1,13 @@
+import { Toaster } from 'react-hot-toast';
 import Header from './components/Header';
 import Toolbar from './components/Toolbar';
 import ActionButtons from './components/ActionButtons';
 import DataTable from './components/DataTable';
-import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
-    <>
-      <Toaster />
     <div className="min-h-screen bg-gray-100">
+      <Toaster />
       <Header />
       <Toolbar />
       <ActionButtons />
@@ -16,7 +15,6 @@ function App() {
         <DataTable />
       </div>
     </div>
-    </>
   );
 }
 
